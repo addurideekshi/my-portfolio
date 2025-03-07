@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drakshayani's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://media-hosting.imagekit.io//f7f3826efeec4232/bg%20image.jpg?Expires=1835177006&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zEuKMZOqMvaTs850LjfIVjqj985zQB4wiKrZ88KZHhubnHjFvlyVV8NvZTv56AVY0SQV8qPekLtJx14g3til4N5iQUHj5aR94~hDQ0~ZEjZIjkdRweVIUJUciltLMRXaAWdGyyzzJA2k76ZVDkODLmC0n808zk4E65~XFtgwEHQ44p4uGhc7uUhyHux~BZxfxI9QR8i5w~hZnRPOJBqSrBeu~kFsGRnlTfML59MecW7FqkzkiU-kFndUzOfWvLC9q~GAii210nJIj4oUpcK-66GcJ-GpfE5Gcn2Msq5EYkeCEDeifoEk6NAuamILnDGI~nnt16gi85ia-HygW0ZXPw__');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .buttons button {
+            background: #2c39f0;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .buttons button:hover {
+            background: #2225ee;
+        }
+        .container {
+            padding: 80px 20px;
+        }
+        .section {
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            margin-top: 20px;
+        }
+        .resume-button a {
+            background: #db109e;
+            padding: 10px 15px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .resume-button a:hover {
+            background: #ff6347;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my skills, projects, and more!</p>
+        <div class="buttons text-center">
+            <button onclick="showSection('profile')">Profile</button>
+            <button onclick="showSection('qualification')">Qualification</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('projects')">Projects</button>
+            <button onclick="showSection('certifications')">Certifications</button>
+            <button onclick="showSection('publication')">Publication</button>
+            <button onclick="showSection('professional experience')">Proessional Experience</button>
+            <button onclick="showSection('interests')">Interests</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </div>
+    </header>
+    <div class="container">
+        <div id="profile" class="section">
+            <h2>Profile</h2>
+            <img src="https://media-hosting.imagekit.io//dac4122fa454442c/87.jpg?Expires=1834853052&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=GsOuxOi6Wtkv8v~NtB38gM2KtNTzWVLp8apkeQZySjn52TtL6Ye9f1UyNRPgXA2y1W~bsYy7SOxryFW3eTHQTE7W8SEZbvE8~GAuz7i0KXJPc3WlfbN8Sik35HDXr5824aoO~hTW-WqU6x7Vq~wr-6g~wgrXIKqCwCXqHQuLxnJitV-a26-6dMilexWD3-694n7Iz4vVnAF4sSyygLY1wvfovdm06xdmDmhJKkvN2HbT2q8qqvO5203D5fMW78weg4NwP0~-tHQl-3SjtDKdqoCa0dXtbllWp8NgNkeSkR2NURCqnMY3dnPSYBzYYZftpEN6lFsNDIeo9hi2Q69LCw" alt="Profile Picture">
+            <p>Innovative IT graduate with expertise in Python, Machine Learning, Web Development, and UI/UX Design—blending tech and creativity to build impactful solutions. 🚀</p>
+            <div class="resume-button">
+                <a href="http://flippingbook.com/view/160706776/sume:" target="_blank">View Resume</a>
+            </div>
+        </div>
+        <div id="qualification" class="section">
+            <h2>Qualification</h2>
+            <p><img src="https://media-hosting.imagekit.io//2dbadd325fee4220/GMRIT.jpg?Expires=1835199760&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2IvwmTz6cuZ~sPeNxEPmXT8hH7hI9ig0Uezb67h7TyfUoHYizxKtSoD1VP2miRpQrVdbdoAhCF6pBwK68inOcya1O8It0tpLhQDtDUXoaJbViV3wcMFwxNNtiBy3HRyKmXgwqCLAyMMqRndDS17nNiNWFWc0HgeOTVxM~0k9AdAkqTwNBlUQ4gSshq42EuQ4pUHg2jqI6~ucK-1Vy-xgNVCUF~XBMBLeWnHyxunvafmSiSQ4xB7LPcoKqAoB9vD5yP8bDLA8i1g3TwmlcrnQ1wr9S1fhwopk16gfwikrIBplqixJh5s-JMjdPXNoqfc78evsrj7CtlUo-7hbmsxWRA__" alt="B.Tech IT - GMR Institute Of Technology" style="max-width: 70px;height:auto;  border-radius:1-px;"><a href="https://pdf.ac/4abked" target="_blank">B.Tech IT - GMR Institute Of Technology</a></p>
+            <p><img src="https://media-hosting.imagekit.io//aca44ef6448c49ae/NRI.png?Expires=1835199778&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=RPeDy1RFctdsvX1ZOUoVNUIjWwJSOASmFVQC60wZKoVr2zYGndazIwC3EJazXFuKhePUQwHyvPsCpzEIEP-gFIrVWPLf8aTeHx7cy0N0hUnrMUhNxqCK2Vl-0O8WJ9HTAmhlZ7pYf1fa12P~uImiH-suDKL91pTr2WUdLztnoU7VR1EpkqVVXsICy-BmbAb4aCjJC-XGdOAgBPOJYd2XjJZY9GCt5cCowSCH73858qJFljNNCBtOq9a2lDKzsJy7nWxtWDuwHmIo9CpPYA8SPXmHIHEn1rpiEevqZjKKXRbWybLK4X8CF0br05Vkg~~t9ZGz8lfuLMvyjjypXoquoA__" alt="NRI Girls Junior College - Intermediate MPC" style="max-width: 70px;height:auto;  border-radius:1-px;"><a href="https://media-hosting.imagekit.io//55a30b61d37e4591/My%20Intermediate.jpg?Expires=1835190106&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Jdeno~ItuTeBXp-QxRB9PLG1O9WOHQgJSv-puQfucFQ75Y9HmXzDSWRsWHcxrtTuWEfLsMwEp9L0LAzllHwPxiED0qKgCAUkhwamg9F-9Ub8FSv2KCayuJlb6NPKw1HoaEwYxFjS~3guUfX9YpZODO95amdDFRxcGlKMsL8dDGD1gYjiV~O92tX7vWYOtv6rZoHWwyQkmLQpuEifLsnDmeO5Pd9kchVN9-2gSBqDK5uskV0xActMuiUDKpiLh03jxNPKv8ION9qZY2UgtrPAKBJDO-HHaTn4nlpEE9M6gxSfra2OPF7kDoiKtZQ~kF0EHh3A01NEMkNWXUesCimX6w__" target="_blank">NRI Girls Junior College - Intermediate MPC</a></p>
+            <p><img src="https://media-hosting.imagekit.io//5c9a8b9f965140d4/ZPGHS.jpeg?Expires=1835199790&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=FqCchBnvcYtofgmCA-OdBbSa~sV46ECrnBCSBEpeZEEd7FdYQSXbL2OZJaYuJoZzwXF7GKr1GRUWCZXs~zkpE8ojYkWObq2RIkBIiTfCCIfySueOBdgn0G7wGEspuaxbe~6cCBNa7PfNge8LCH-CL-D4jj5871~5dn00K6Y~kUon8837fbcrmsQP~kAUzUM2eXjb57u4rt0ZlPhS7Hc~1EKCmkxjLKLlW6VdBQGM4FlUyl-WL~qymAeCnYQgUGlJYQRPS6NK66uTbI3Y7~xMvcxdOgDdmHf4ltzulRHGCH8NK0pD6irrLB4~gHWxB0x1HE-~MW70ixRlFGlGY45bvQ__" alt="ZP Girls High School - SSC" style="max-width: 70px;height:auto;  border-radius:1-px;"><a href="https://media-hosting.imagekit.io//1568dcd5d0cf4753/my%2010th.jpg?Expires=1835189859&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fuaDsgqjuTk1eSnYeToVQpDFmBtxUQ~ZwQvxM7LOoKV~rEjY6V94Q0spqEo3oi0vkIh1Vb9kCJgUdbwlvwfJTByiNWAHm4hjXr7kkQBZQPJ6wj6qP5IRkUV-cQx5DwjioGWbLOL0A0HCWrCs5~Rq-Qe~ZpD3sP9H2HvKXvSpp9~B2Y-CS72OWC5zeAvObCfrU90PZLTFbwGt6Y02J7-OgKicRYj8RGCVheI4UEjqf1d2JcgzYOLcnur4Z8eVwZy1~Naf2JjU1qVGCLkWihR1n7HvLnt6Gfx~FlMkpqv5o~-QNZgtWZedTpw7PiH3kO6EWiBM5ELi52K4H3JAiFTSBw__" target="_blank">ZP Girls High School - SSC</a></p>
+        </div>
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <p><img src="https://media-hosting.imagekit.io//2f0d8a82bc3f4900/icons8-python-48.png?Expires=1835197930&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=e62FwHAiEvRYvF1NSBZi5ODKVsNVHIFhSys56y1i-vQ6TyZHhoM8H350loWyoOo6vkIpZGZC842ONjHf4H7YBBn-Hi1L1culNG4LliesYcL9fIHH0QofjnCexQgR1GsVBtA5Qv~com0mznF3QeKwS~vsG4hbSNjSEMzidz1B5wI-8PywTM4KPTwTczORtkg5AUA2xbJyRI4uF7TmuFAkpOSoKpVlUEXeo1dDnY0v9m-F~vW77A97KRGU-37ckZP3qQU~WvCSZUjg2G65P42oLkglvlm2iTcxGNjgh9~XSbll5vHMfUMrW~iUtTMQ-vXZVtkAPreyD-a~cZiPeC4AqA__" alt="Python" style="max-width: 70px;height:auto;  border-radius:1-px;">Python</p>  
+            <p><img src="https://media-hosting.imagekit.io//8eec81d2d7214d08/icons8-html-5-48.png?Expires=1835198724&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=DqDry5MvOv4mTxVUhs9W4gct0ZyGMTVGsCkN5yC6jvvae~VR7dXgOmCagG7ofFmiN~pQSojKlPebDSFJMrcAfP-T0FPKL6dMXXjl-JDhHuKgPKDGSqlBmTqySXYVD4mfYROSf-aT-Ng5FLZEsLJa46BSr62zPw9tPw77gNmLaRYzhXTSKNkMcDTwbtjrSGjZZjEdR-Y-cZK6GKhm8iLxoVPKBD5IPGoJLOQsTqS1VnKhAE2iessuz~hN0nS10cz8kA-DPGiUb~8u8Cp4NwfteGIO2e1WH~8BkvwsKWzJDa~T~dDxNr~y9i~~7auIKT-hcwq8ynzLsCeNxbXX7WmKnQ__" alt="HTML" style="max-width: 70px;height:auto;  border-radius:1-px;">HTML</p> 
+            <p><img src="https://media-hosting.imagekit.io//d63c823898234fa9/icons8-css3-48.png?Expires=1835197995&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jAGhveAGcUMmyw3xD1SwZxWuwjOlb~qfOvyrSqOB1iV7tNhRs0gxLdnpSQWQmag9I4gT9kY8i9UXQHY6dxmbuHdOBeyrSqx4y~EG1cqrJgkPETn1tSqms75KzqPERx2T3~OAwYDhPzYKfEcOhsc-n7xELuXTxsDehiR1u8A6rwOmG2F9x3KTuF7~s-ZmJJTgERBbK4SK-hd5bLG5OFwbnJRvnSppWrikQ5Jh0Ss39y4Bbpdd0tdXCeih7v4JlXnUMYxpE1M6ovDy44nxqRvghYhnhOSY7~0lXXDhbzV7P7N~k1Js5T3ipvwUNKQwuCdoRG1K-f--KdNe0eU~ceL7UQ__" alt="CSS" style="max-width: 70px;height:auto;  border-radius:1-px;">CSS</p> 
+            <p><img src="https://media-hosting.imagekit.io//8e5ad3e1ebd949b8/icons8-javascript-64.png?Expires=1835198694&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Y1CdDKKBLN7a9ZkkgNvWxN8NqFAmrn~od56mh7-YIV8xg2ufDsSfiPHCITHHKdqO5bcI5eKeVvI513qnmJdHiAcebsDWx7yaoOxqyxzs9R8gLqVbScB5DadAzePrt9U7tWmGKzbLEMRsf-lywNQ8XlFd4bhj3q9lcR~P8DW0BsDaRdVae7RVmCi8vEllI6Dlwz~GZg2nxjIJ20UiozlBESQPp8s21TZ9jcDAPyGW4Pdn8cBDLkSiQdFGKKGR-VXagY34uK1baMr1AVnCrmkWHrWIgo8tv1xTXW1M0AEdQFcT8X9XmqfykxII~a61uLk8trKF0fRFe4o70WucWic-Kw__" alt="Javascript" style="max-width: 70px;height:auto;  border-radius:1-px;">JavaScript</p>
+            <p><img src="https://media-hosting.imagekit.io//6be225319840401c/icons8-machine-learning-64.png?Expires=1835198011&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=LKpK68kSvD5LgIn7q-ykq2LiitcGdwr2EJMyJ88kqkH0T6ePpyffO3UDSOUt-ryprwJ5L7Ehxqar38C828doSgcCHBex9bW9QZ69pq~pCadjFcVUqjIvFRaGT0FEhqvxVXwq6Z6GGf23~PMMCZTUBI3V-FSSumZxsnQ2ZEPLsmBYPHEeAvyB9a6IjA4Edg3i481o-ksU3NJjJfXSMoYuu77DQRRF3YQKVlg-wVC8rD6bH8pyIZRIrlBnDNYZu3jvvBKBbnF1HcW5cVwI-FJZV7DHhc5gxbRUlzw05wp9AL9sNat5On15OxeC-eZWhPiczgit9hoxcaeT3VpSp51aTA__" alt="Machine Learning" style="max-width: 70px;height:auto;  border-radius:1-px;">Machine Learning</p>
+            <p><img src="https://media-hosting.imagekit.io//3ce58f9b9e38418a/icons8-figma-48.png?Expires=1835198018&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=DnMIMVY9x~zMa15XE4iqRKIglXp47CPQg0QiNLm8eYOhSUa-b9XZO8X5jYcmY009Pwp4~3GILKxUXpLhZwy5zMGQaJ0HZItiueSTRjUq6Qc~99C4kbCXW2Xv7L6KbNm8tQ9Q9KOHZ0dvA~Vb7WYqUf9FJZdO1WM3f5uHEYewd4HavXUVgKmJUKFHGouXEWjwhmHQMpfItnUV6oZOhu00JI6DE4l51LDIwuyiIAvowYPy1NCEbwvYX~6-9GGSpFLPBD8-cYLaBFZlYCPAkY3b1QRgKZ41TNnJtP1v08foxY2UEOOIxRPm1jn5pIl-bf2pTSg5zjT6X8oi1sOT8X2ruQ__" alt="Figma" style="max-width: 70px;height:auto;  border-radius:1-px;">Figma</p>
+        </div>
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <p><a href="https://pdf.ac/2WQC3v" target="_blank">Artistic Neural Style Transfer</a></p>
+            <p><a href="https://pdf.ac/1W3HC9" target="_blank"> Disease Prediction and Medication Advice</a></p>
+        </div>
+        <div id="certifications" class="section">
+            <h2>Certifications</h2>
+            <p><img src="https://media-hosting.imagekit.io//146258ece05c43c5/Cisco.png?Expires=1835258594&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mBfcVxmMrUHC6N2e2HJpnQlyyIb0Ss-osb1MayOf3g3eEmVu3LmFdTM0~i9qH73Am8t~3CnJatSqpY5oPQy1FTFcYueH-szEt1F5fjtQof69K1zFhtpXZoYZ~l~xmMiQD-Ejif4KNTE1SAkitVzq42qRXCPXHrN7RWVsfrO0NOl6GDS4Gzk5D3uOxbzY4Q6KarcKEP6IIJZxmktL1tjoMC5YM4cAYf9KW2GHPDc8v3keezGPcCBnxtDM~PHjGtDQu8lOQURPz~xucHD1JFyHJVWEOEgarQvh982fSyWO7tCJ2t2kzdnzhAUpA9ltm66zI83EeXhmbari4iUjhUh6Rg__" alt="Python : Cisco" style="max-width: 50px;height:auto;  border-radius:1-px;"><a href="https://online.flippingbook.com/view/161245902/" target="_blank">Python : Cisco</a></p>
+            <p><img src="https://media-hosting.imagekit.io//44406bc75a3240d0/coursera%20logo.png?Expires=1835258601&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=EVjt7ygJI8ko-ojF8AyxgShjUlfWWCccHp38~JIS4lGU4MHPS2xj5lkjaHuhPnoSmOB5EpXYhbVR~pgs1QwTTVvO-T~16eIb543u5Opsy2dLU8mZ0oMTPUUwyAWqKGVwTnddJsMpcGL5LD7bvsmA86XkAEJVMLaMSvvqxxk3VgmN-BXI28ha4bVuu5oHz5qqMS3euTUehm98JDEpMEjzPGxZu-d-IyOfLRdVW6D2kpBWPwAypTbAQHgO-zt2gW61dCPkcA9r4J1fNEn2CmezPu70DHHxVKr5zYRuSZgncfsv6FcpJIg6BT~ZcLI4~yO4oJq7DWkBQ1ohEDG0T0LCQw__" alt="Machine Learning : Coursera" style="max-width: 90px;height:auto;  border-radius:1-px;"><a href="https://online.flippingbook.com/view/160469488/" target="_blank">Machine Learning : Coursera</a></p>
+            <p><img src="https://media-hosting.imagekit.io//78b4d0004fd34f54/aws.png?Expires=1835258585&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=peg~s61oIQz-G-hGE8Q0C8lSzAixBCKgPgmg2RH3cjZqCvtF-kU7mZ4oLbagjrlSLI6RF10Zdic8wcxyg99SwdPDYzkWj5Pc1WYV~gRO1XHlUTd5ZaFBqTSgyRpukrDWL0sc09kdIknoePYggaXmh4bs8Bx-mf2U9T68SfwT06dtxjFOSxmCXjc3wz51u1IS7n6cd2iGsfTa0aAcX5tPVY26qNH1Mwy2xZkv1PjXP0QmzuFZeUJEBt0d0jruNX7RABAdPJ7LqwC9TiEfVmEA4OV82zDGEjpIian1lrvWb~m2yvU8SjzM730VhzWFp~6qdTYo1cnma-dEHxSbPTK4Lg__" alt="Cloud Foundation : AWS" style="max-width: 60px;height:auto;  border-radius:1-px;"><a href="https://online.flippingbook.com/view/160547236/" target="_blank">Cloud Foundation : AWS</a></p>
+            <p><img src="https://media-hosting.imagekit.io//df9eac45e1fb473f/google.webp?Expires=1835258609&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mo84qhpgiXEq2mcnzZo1u32bIpdAeck6Q39ESjP8ofBHYwWNd-fQWqnjVHVvqabmOiThEphkTbIp2pLL5ZR5fKc8ytHX59DsR9raIExol0Ul~WsPfn2ngIHyAmjDIn-FeN9wxP96edykVKvQLpsry9HdCFwRHA7vfyo2NzXWA7BZwSztcd8PaExKhGslEJVq8Qf4qxMyt3MYsrYooRhwvO5PJnxkxOqSnHmRGlp1YJ2QHwuJE9GwsRGk7S-RbFlcPGPaVVfwkRJ95TpfnXUZp~JhguFD4GkeDDiBdOXZH5HGFRNAvc7bXdfh5Ob8VwHPeonMEFEm54Dckk38WHexFw__" alt="Google Data Analytics : IBM Coursera" style="max-width: 60px;height:auto;  border-radius:1-px;"><a href="https://online.flippingbook.com/view/161461817/" target="_blank">Google Data Analytics : IBM Coursera</a></p>
+        </div>
+        <div id="publication" class="section">
+            <h2>Publication</h2>
+            <p><a href="https://media-hosting.imagekit.io//855157144a7b4f14/Adduri Drakshayani Certificate for Paper Publication IJRPR_page-0001.jpg?Expires=1835021245&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vz1E9UUzZ0bw4X1j2Mq1Z2rXaaKzfrthxosFdeW8C5hMbOgnxQXmvEo22V3D5EhSdW6RvPzwNVnrrXRHdLR3azIokKh-NRmcqq72MQyy1EXuvDn87MquvKo5DAXKq8kgdmP3Km-XipPlss4hYvYeNF2eG3VjcFhZgY8Cailny8f-fCDSax3zAGEzk9coaHJmJhS1sCKaf57EZUhx~yXDA6K9gGuVzSPdhNoFb89XpdKk1P4Zag-KYmG2r0Z6cxd7hvg~sUfQz1q9YiZJg5OFgrEaCA5JME9IiYA~ch41FTa70DtpjvCiRWKyL8CWqNwI7ycZIFCLiX5JWDDdQUe5fQ" target="_blank">Sign Language Translator</a></p>
+        </div>
+        <div id="professional experience" class="section">
+            <h2>Professional Experience</h2>
+            <p><a href="https://online.flippingbook.com/view/161397370/" target="_blank">Intern at Port Authority Of India - Dashboard Development</a></p>
+            <p>The aim is to create software using sources to visualize KPI(key performance Indicator) a quatifiable measur of performance overtime for specific objective by using HTML, CSS , Javascript for frontend and python for backnend</p>
+        </div>
+        <div id="interests" class="section">
+            <h2>Interests</h2>
+            <p><img src="https://media-hosting.imagekit.io//b49d30b4d73d4bb0/Drawing%20logo.avif?Expires=1835278698&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Xbjuz51~cdqcwjdzkl1hoJtK8~PTm2l91LQNFOHoWST1ODJ0Rc8HszsCJMz79zGPHFiEl8g3HkVA1omj94KLIm0y~zoaej6RoIRWOVFmh49zhKLn5tHBWiCKBiMzE8p-e5lh0-sCF76mb3YtHDmUG4~82xDRJWmq2w-WH4eN-vQerOzFTinpNiIK61rzAzcNmzQ8tB1fi3eohZjUsW4LrGh1ZNHypvirv3VvW2Tl2A61yGoGuR1B0MGCt6FuKzBguAc5G2iZpUcozt9lqpF5K~5xMugMyq2oY6L55dfPe6DVZ0KYwVHpx-IgrLTVAJjvKboDvAZrxCR5bmK-33Dn8g__" alt="Drawing" style="max-width: 50px;height:auto;  border-radius:1-px;">Drawing</p> 
+            <p><img src="https://media-hosting.imagekit.io//d9be6252244e45dc/cooking.jpg?Expires=1835278686&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jQYoe18VBk1PIQiU45KC9Vmn7zVaTmVXYvP0sfYsg5vebvy5zMqUWrJIluZtcwsr8u-chg~qgwtnI9jBMjbDLirglgjePnBYIbsAYxH4ix7SzHTXL9KvqNHSaCmJ6npfoq7iorPOBjSqdTkqgXFxj4NKJ40OlmZLx1hTbdjEScbMMjluenAxhEXuCj0-l2gXJNp2yfivhVYabC0~rkS-H0ZXl4Mf7hVc2YAcAMMk4ph3TeMsrXDon8Np4SjU3v3Ggis2QTAD6dg2arWwbwkQITJBZ48hZDJqi3Mckond57WYhiRqVM13vOcFnCGc-kcZBkkDiOvhnPLS~lVqb~NRWQ__" alt="Cooking" style="max-width: 50px;height:auto;  border-radius:1-px;">Cooking</p> 
+            <p><img src="https://media-hosting.imagekit.io//ff74d55614424309/dancing.jpg?Expires=1835278674&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Daq-1axoA3b6CN4FOhYQyo4Nw4UDEN9TYCsif9bHLeqBWqdYVHLB-JucPywkAak7rigRhJe7JpV~9cQ-TjztVO0IyZmtv73cFcs2t4f4HJuxOgnErViYxI92ehdtAO92hznoTFaHQQYT78ERFisb5-GmEURpi0XmQ2TWr2QqJXi24ObEY6CG9RQnJx00HsbOUTdO2WS0NYWecjwtz6SGQVB29ajKBlLMSHw~yCNW~4Xl1312Cr0X-EaYmptDF1K~Y-sUlMmksesUul18Z1FvLZKdIfjOanHaFVvtK5U5VGreBpEMmy9~TQ3IYFFPj1Lc1S8nSVBzAmch9dkTG1ilVQ__" alt="Dancing" style="max-width: 50px;height:auto;  border-radius:1-px;">Dancing</p> 
+            <p><img src="https://media-hosting.imagekit.io//543ea346b8704883/PB%20logo.jpg?Expires=1835278660&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=v3tr-0FuiJ32dbBm02U~s1wNsRb~1t63Wv4rpOA~lL-lo2lId~cWhWDzK3ClWVd6KISUuJpAIGg3imuu99ZLLrL5J-rNMfGbkB6miwGoOEfXO-1hYIqI6xioWI89sZgdyIwglTGkqkimooPri3XLmPeSRqfSe5CvdBswiCXlEALqZ7hHs8G9TB9q1EkTnXhwQe0TOkv5OyRobIVRRF-xoe~5ktKRL4u4NoIDMmcfY5VR7bcbGEJbI5MISIAzS5GCrJ1T3tUKygDfn0uXiUP~l0dACKD3s2a32ygkQhf0-am6m-We6icweb-vFB-cLRIez9-5yC-SkGrUrQFrMPkoVA__" alt="Playing Badminton" style="max-width: 50px;height:auto;  border-radius:1-px;">Playing Badminton</p>
+        </div>
+        <div id="contact" class="section">
+            <form id="contactForm" onsubmit="sendMessage(); return false;">
+            <h2>Connect with Me</h2>                      
+            <p><img src="https://media-hosting.imagekit.io//d12a6c8298fe445e/outlook.jpeg?Expires=1835258795&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Vmiv6bcI4YT7rOIytq4xEbJfeO9g3~k6bF5y5L0kqvb7tXZf-KvL7fAhGU03JAYH5-b3Y5lT3w-nX3oT9KciW-zzElnsiherUKl-F0hpPgdWlP~WXS~t~EDn1luole~JnVpRgrQR6OeyLwZEGwF7m71VYqZA-D1dSo9dOeXsUmqcE-bVGEqwOQupk~Yh2FtIyXtSDQBF~4UPzbY34fbVQQETdYgipnL2brHj5mhZFUCyobramaHmTIawJA7TASNxdXqPmtMHsowPd2Q48uX5nKm9GKqdjDVurwHH3TDdLKJJ-3VVRCwoXIkklYYvhWDDr8kScnpAbgA7D2rPfMd2fg__" alt="Mail:" style="max-width: 40px;height:auto;  border-radius:1-px;">Mail: <a href="mailto:addurideekshi14@outlook.com">addurideekshi14@outlook.com</a></p>
+            <p><img src="https://media-hosting.imagekit.io//809a375eb0c84d72/linkedin.png?Expires=1835258773&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=j~BoeaHx0Q2zTCC1btJm-TqSJ~eF7jKM5TLzSOBfAL4St7ykdLgsObrOajuWIuwPt3O6bzrb8wgt2VpVbdT8WY5cvSveJxvKNjHwxMcN8Rhijd7dviX0k6VUCRtukgnQqC0k4cgcr4LvPQsW20BMYK0KcP4IEfrd6Ftz2g70SOTDciYPUsVKyeBkXy~9pP0LbYooDSTE5j0VbYEfzIJ16loP3cfLRpsPjY-EXynZorQFh2VnJGbJWBRpLrNa3rdizJKOPsE1KtuI3cjy9L66EePL9n-uvAp1vWn5D1Q2ILntQ1INas3diGbAyRkXWLbO9ACM~dFoK8mgQdUyVUI-3Q__" alt="LinkedIn:" style="max-width: 30px;height:auto;  border-radius:1-px;">LinkedIn: <a href="https://www.linkedin.com/in/adduru-drakshayani-deekshitha-3ab377352/" target="_blank">Drakshayani Adduru</a></p>
+            <p><img src="https://media-hosting.imagekit.io//b091010903f840ad/contact.png?Expires=1835258764&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=r2rZHjxRdFqLKplEjrKJx2x~9p2uei2woXtUxB5Ou3QesRjt9WadFLJqJf7SjHfD6xkUvZNw5NmDsg6o45l6G6SV1VFvbkYumLEJJH5mzjzXPopSa1-ZEWiqyHyeDcr9~T4JECp7zE08IkUCDBw6Fe3LAEog3NG0BB8HGQ-REtq0M8otKyENfj3~4aP0z7zxMOdyRVGNQ~1SFp20FaW1Z5joAhNnbWC0PT85cUtsrU6L4fThKXT~3wN5HmzawBiVznh0SMkDmm962HVkyFQl6knHWYDe01HLUWWAzdrPE3vxfc4PHXdvKdMcOFA0BwsBBAN3dwte~HNmqCvdlWYIiA__" alt="Contact Number:" style="max-width: 30px;height:auto;  border-radius:1-px;">Contact Number: 8143246313</p>
+           
+        </div>
+    </div>
+</body>
+</html>
